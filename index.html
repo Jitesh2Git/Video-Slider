@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Slider</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <video
+        src="videos/video1.mp4"
+        class="slider"
+        autoplay
+        loop
+        muted
+        controls
+      ></video>
+
+      <ul>
+        <li onclick="videoslider('videos/video1.mp4')">
+          <img src="images/img1.avif" />
+          <p>MAX VERSTAPPEN</p>
+        </li>
+        <li onclick="videoslider('videos/video2.mp4')">
+          <img src="images/img2.avif" />
+          <p>SERGIO PEREZ</p>
+        </li>
+        <li onclick="videoslider('videos/video3.mp4')">
+          <img src="images/img3.avif" />
+          <p>LANDO NORRIS</p>
+        </li>
+        <li onclick="videoslider('videos/video4.mp4')">
+          <img src="images/img4.avif" />
+          <p>OSCAR PIASTRI</p>
+        </li>
+        <li onclick="videoslider('videos/video5.mp4')">
+          <img src="images/img5.avif" />
+          <p>GEORGE RUSSELL</p>
+        </li>
+        <li onclick="videoslider('videos/video6.mp4')">
+          <img src="images/img6.avif" />
+          <p>FERNANDO ALONSO</p>
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      function videoslider(e) {
+        document.querySelector(".slider").src = e;
+      }
+    </script>
+  </body>
+</html>
